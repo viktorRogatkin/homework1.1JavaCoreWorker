@@ -7,9 +7,9 @@ public class Main {
         OnTaskDoneListener listener = System.out::println;
         OnTaskErrorListener listener2 = System.out::println;
 
-        Worker worker = new Worker(listener);
-        Worker worker2 = new Worker(listener2);
+        Worker worker = new Worker(listener,listener2);
+        //Worker worker2 = new Worker(listener2);
         worker.start();
-        worker2.start2();
+        //worker2.start2();
     }
 }
